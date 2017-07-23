@@ -57,7 +57,7 @@ nav p {
 
 /* JUMBOTRON STYLING */
 
-#jumbotron {
+#Banner {
   height: 44.7rem;
   width: 100%;
 }
@@ -80,7 +80,6 @@ nav p {
   margin-bottom: 2rem;
   font-size: 4rem;
   font-weight: 900;
-  border-bottom: 2px solid white;
 }
 
 .jumbotronMain p {
@@ -90,12 +89,23 @@ nav p {
 
 /* ICON */
 
+@keyframes bounce {
+  from {bottom: 3.5rem;}
+  to {bottom: 4.5rem;}
+}
+
 .downIcon {
   display: inline-block;
   width: 100%;
   text-align: center;
   position: relative;
   bottom: 3.5rem;
+  animation-name: bounce;
+  animation-duration: 0.5s;
+  animation-iteration-count: 6;
+  animation-delay: 2s;
+  animation-direction: alternate;
+  animation-timing-function: ease;
 }
 
 .fa-angle-double-down {
@@ -149,12 +159,15 @@ nav p {
 
 /* WHY SECTION */
 
-#uses {
-  background-image: url("../images/scraper2.jpg");
+.parallax {
   background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#Uses {
+  background-image: url("../images/scraper2.jpg");
 }
 
 .usesText {
@@ -183,20 +196,20 @@ nav p {
 
 /* WHEN SECTION */
 
-#when {
+#When {
   background-color: white;
 }
 
 /* PRODUCT DISPLAY SECTION */
 
-#productDisplay {
+#Product-Display {
   height: 37rem;
   background-color: #F7F7F7;
   display: flex;
   align-items: center;
 }
 
-#productDisplay .contentContainer {
+#Product-Display .contentContainer {
   justify-content: center;
   align-items: center;
 }
@@ -240,6 +253,23 @@ nav p {
 .btn-inverse:hover {
   color: white;
   background-color: #313233;
+}
+
+/* ABOUT-ART SECTION */
+
+#About-Art {
+  background-image: url("../images/dog.jpg");
+}
+
+.aboutText {
+  margin: 0 auto;
+  color: white;
+}
+
+.aboutText h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
 }
 
 /* BUY SECTION */

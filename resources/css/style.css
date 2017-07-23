@@ -55,17 +55,37 @@ nav p {
   margin-left: 1rem;
 }
 
+@media only screen and (max-width: 850px) {
+  header nav {
+    display: none;
+  }
+
+  header {
+    opacity: 1;
+  }
+
+  .logoAndName {
+    margin-left: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    justify-content: center;
+  }
+}
+
 /* JUMBOTRON STYLING */
 
 #Banner {
   height: 44.7rem;
   width: 100%;
-}
-
-.jumbotronMain {
   background-image: url("../images/scraper1.jpg");
   background-size: cover;
   background-position: center;
+}
+
+.jumbotronMain {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -85,6 +105,27 @@ nav p {
 .jumbotronMain p {
   font-size: 2rem;
   font-weight: 500;
+}
+
+@media only screen and (max-width: 850px) {
+  .jumbotronMain {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .jumbotronMain h1 {
+    font-size: 3rem;
+  }
+
+  .jumbotronMain p {
+    font-size: 1.5rem;
+  }
+
+  .jumbotronMain {
+    width: 70%;
+    margin: 0 auto;
+  }
 }
 
 /* ICON */
@@ -131,6 +172,12 @@ nav p {
   justify-content: space-between;
   align-items: center;
   text-align: center;
+}
+
+@media only screen and (max-width: 850px) {
+  .contentContainer {
+    height: 18rem;
+  }
 }
 
 /* WHAT SECTION */
@@ -194,6 +241,12 @@ nav p {
   background-color: white;
 }
 
+@media only screen and (max-width: 600px) {
+  .usesText h1 {
+    font-size: 2.5rem;
+  }
+}
+
 /* WHEN SECTION */
 
 #When {
@@ -255,6 +308,37 @@ nav p {
   background-color: #313233;
 }
 
+#Product-Display-tablet {
+  display: none;
+}
+
+@media only screen and (max-width: 850px) {
+  #Product-Display {
+    display: none;
+  }
+
+  #Product-Display-tablet {
+    background-color: #F7F7F7;
+  }
+
+  #Product-Display-tablet .contentContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20rem;
+  }
+
+  .productInfo {
+    width: 100%;
+  }
+
+  .btn-inverse {
+    background-color: #313233;
+    color: white;
+  }
+
+}
+
 /* ABOUT-ART SECTION */
 
 #About-Art {
@@ -270,6 +354,17 @@ nav p {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 850px) {
+  .aboutText h1 {
+    font-size: 2.5rem;
+  }
+
+  .btn {
+    color: #313233;
+    background-color: white;
+  }
 }
 
 /* BUY SECTION */
@@ -327,4 +422,29 @@ form button[type=submit] {
   font-family: "Raleway", sans-serif;
   background: none;
   margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+form button[type=submit]:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 850px) {
+  .buyContainer h1 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  form p {
+    font-size: 1.2rem;
+  }
+
+  form input {
+    font-size: 1.2rem;
+  }
+
+  form button[type=submit] {
+    background-color: #313233;
+    color: white;
+  }
 }

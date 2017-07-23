@@ -1,0 +1,300 @@
+html {
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+}
+
+/* HEADER STYLING */
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  opacity: 0.8;
+  z-index: 1000;
+  color: white;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+header:hover {
+  opacity: 1;
+}
+
+header a:hover {
+  border-bottom: 2px solid white;
+}
+
+header .logoAndName a:hover {
+  border-bottom: none;
+}
+
+.logoAndName {
+  padding: 0.5rem 0;
+  margin-left: 2rem;
+}
+
+header h1 {
+  display: inline-block;
+  font-size: 1.7rem;
+  font-weight: 900;
+}
+
+nav {
+  margin-right: 2rem;
+}
+
+nav p {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+/* JUMBOTRON STYLING */
+
+#jumbotron {
+  height: 44.7rem;
+  width: 100%;
+}
+
+.jumbotronMain {
+  background-image: url("../images/scraper1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.jumbotronMain h1 {
+  display: inline-block;
+  padding-bottom: .5rem;
+  margin-bottom: 2rem;
+  font-size: 4rem;
+  font-weight: 900;
+  border-bottom: 2px solid white;
+}
+
+.jumbotronMain p {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+/* ICON */
+
+.downIcon {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  bottom: 3.5rem;
+}
+
+.fa-angle-double-down {
+  color: white;
+  opacity: 0.7;
+}
+
+.fa-angle-double-down:hover {
+  opacity: 0.9;
+}
+
+/* GENERAL CONTENT SECTION */
+
+.section {
+  width: 100%;
+}
+
+.contentContainer {
+  width: 70%;
+  margin: 0 auto;
+  height: 25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+/* WHAT SECTION */
+
+#what {
+  background-color: white;
+}
+
+.textSection h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.headerUL {
+  margin: 0 auto;
+  height: 0;
+  width: 10%;
+  border-bottom: 2px solid black;
+}
+
+.textSection p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+/* WHY SECTION */
+
+#uses {
+  background-image: url("../images/scraper2.jpg");
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.usesText {
+  margin: 0 auto;
+  color: white;
+}
+
+.usesText h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+.btn {
+  border: 1px solid white;
+  display: inline-block;
+  padding: 1rem 2rem;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  color: black;
+  background-color: white;
+}
+
+/* WHEN SECTION */
+
+#when {
+  background-color: white;
+}
+
+/* PRODUCT DISPLAY SECTION */
+
+#productDisplay {
+  height: 37rem;
+  background-color: #F7F7F7;
+  display: flex;
+  align-items: center;
+}
+
+#productDisplay .contentContainer {
+  justify-content: center;
+  align-items: center;
+}
+
+.fade {
+  width: 45%;
+  margin-right: 5rem;
+}
+
+.fade img {
+  height: 100%;
+  width: 100%;
+}
+
+.productInfo {
+  width: 40%;
+}
+
+.productInfo h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.productInfo p {
+  margin-bottom: 2rem;
+}
+
+.productInfo span {
+  font-weight: bold;
+}
+
+.btn-inverse {
+  border: 1px solid #313233;
+  display: inline-block;
+  padding: 1rem 2rem;
+  color: #313233;
+  transition: all 0.3s ease;
+}
+
+.btn-inverse:hover {
+  color: white;
+  background-color: #313233;
+}
+
+/* BUY SECTION */
+
+.buyContainer {
+  width: 70%;
+  padding-top: 4rem;
+  margin: 0 auto;
+  height: 30rem;
+  text-align: center;
+}
+
+.buyContainer h1 {
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+form p {
+  display: inline;
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
+form input {
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#name {
+  width: 20rem;
+}
+
+#location {
+  width: 20rem;
+}
+
+form input[type=number] {
+  width: 3rem;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+form button[type=submit] {
+  display: block;
+  margin: 0 auto;
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  background: none;
+  margin-top: 3rem;
+}

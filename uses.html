@@ -62,7 +62,18 @@
 
     <div class="buy-button-section">
       <h1>Do you want to start protecting your food with a cedar barbecue scraper?</h1>
-      <a href="index.html#Buy"><div class="btn-inverse">Buy now</div></a>
+      <form method="POST" action="http://formspree.io/matthewjsch@gmail.com">
+        <p>My name is </p>
+        <input id="name" type="name" name="name" placeholder="">
+        <p> and I would like to buy </p>
+        <input id="number" type="number" name="number" placeholder="">
+        <p> scraper(s). I live in </p>
+        <input id="location" type="location" name="location" placeholder="">
+        <p>. You can reach me to confirm the order details by email at </p>
+        <input id="email" type="email" name="email" placeholder="">
+        <p>.</p>
+        <button class="btn-inverse" type="submit">Send</button>
+      </form>
     </div>
 
     <script
